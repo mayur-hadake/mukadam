@@ -118,7 +118,7 @@ $msg="Booking Successfully Confirmed";
 											<th>Source and Destination</th>
 											<th>Status</th>
 											<th>Posting date</th>
-											<th>Action</th>
+											<!--<th>Action</th>-->
 										</tr>
 									</thead>
 									<tfoot>
@@ -131,7 +131,7 @@ $msg="Booking Successfully Confirmed";
 											<th>Source and Destination</th>
 											<th>Status</th>
 											<th>Posting date</th>
-											<th>Action</th>
+											<!--<th>Action</th>-->
 										</tr>
 									</tfoot>
 									<tbody>
@@ -164,11 +164,11 @@ echo htmlentities('Confirmed');
  }
 										?></td>
 											<td><?php echo htmlentities($result->PostingDate);?></td>
-										<td><a href="manage-bookings.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Confirm this booking')"> Confirm</a> /
+										<!--<td><a href="manage-bookings.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Confirm this booking')"> Confirm</a> /
 
 
 <a href="manage-bookings.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Cancel this Booking')"> Cancel</a>
-</td>
+</td>-->
 
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
